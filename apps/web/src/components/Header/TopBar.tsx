@@ -2,7 +2,7 @@ import mobileApp from '@/assets/mobile_app.svg'
 import { Button } from '@/components/ui/button'
 import Language from './Language'
 
-export default function TopBar() {
+function TopBar() {
   return (
     <nav className="flex bg-foreground text-[#eeeeee]">
       <div className={`
@@ -47,3 +47,5 @@ export default function TopBar() {
     </nav>
   )
 }
+
+export default TopBar

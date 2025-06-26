@@ -1,12 +1,14 @@
 import { Menu } from 'lucide-react'
-import { useState } from 'react'
-import hfmLogo from '@/assets/hfm_logo.svg'
+import { useMobileMenu } from '@/hooks/useMobileMenu'
 import LoginButton from './Bottom/LoginButton'
-import RegisterButton from './Bottom/RegisterButton'
+import HeaderActions from './HeaderActions'
+import HeaderLogo from './HeaderLogo'
+import HeaderNav from './HeaderNav'
 import Language from './Language'
+import MobileMenu from './MobileMenu'
 
-export default function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false)
+function NavBar() {
+  const { menuOpen, toggleMenu, closeMenu } = useMobileMenu()
 
   return (
     <nav className="sticky top-0 z-50 flex bg-foreground text-[#eeeeee]">
@@ -24,46 +26,13 @@ export default function NavBar() {
             xl:gap-23
           `}
           >
-            {/* Logo */}
-            <a href="#">
-              <img src={hfmLogo} alt="HF Markets Logo" className="-ml-1 w-33" />
-            </a>
-
-            {/* Desktop Menu */}
-            <ul className={`
-              hidden items-center gap-9
-              lg:flex
-            `}
-            >
-              <li>
-                <a href="#">Markets</a>
-              </li>
-              <li>
-                <a href="#">Trading</a>
-              </li>
-              <li>
-                <a href="#">Investing</a>
-              </li>
-              <li>
-                <a href="#">Tools & Education</a>
-              </li>
-              <li>
-                <a href="#">Company</a>
-              </li>
-            </ul>
+            <HeaderLogo />
+            <HeaderNav />
           </div>
 
           {/* Right section: Auth Buttons and Mobile Menu Toggle */}
           <div className="ml-auto flex items-center">
-            {/* Auth Buttons */}
-            <div className={`
-              hidden items-center gap-5
-              lg:flex
-            `}
-            >
-              <LoginButton />
-              <RegisterButton />
-            </div>
+            <HeaderActions />
 
             {/* Mobile menu toggle */}
             <div className={`
@@ -75,8 +44,9 @@ export default function NavBar() {
               <Language />
               <button
                 type="button"
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={toggleMenu}
                 className="cursor-pointer"
+                aria-label="Open mobile menu"
               >
                 <Menu className="h-6 w-6" />
               </button>
@@ -85,27 +55,10 @@ export default function NavBar() {
         </div>
 
         {/* Mobile Dropdown Menu */}
-        {menuOpen && (
-          <div className={`
-            absolute top-full right-0 left-0 z-50 flex h-full min-h-[70vh]
-            flex-col bg-foreground px-6 py-4
-            lg:hidden
-          `}
-          >
-            <div className="flex flex-col gap-8">
-              <a href="#">Markets</a>
-              <a href="#">Trading</a>
-              <a href="#">Investing</a>
-              <a href="#">Tools & Education</a>
-              <a href="#">Company</a>
-            </div>
-            <div className="mt-auto flex flex-col gap-2">
-              <RegisterButton />
-              <LoginButton />
-            </div>
-          </div>
-        )}
+        <MobileMenu open={menuOpen} onClose={closeMenu} />
       </div>
     </nav>
   )
 }
+
+export default NavBar

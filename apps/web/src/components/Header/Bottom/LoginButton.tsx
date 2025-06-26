@@ -2,19 +2,28 @@ import type { VariantProps } from 'class-variance-authority'
 import type { buttonVariants } from '@/components/ui/button'
 import { Button } from '@/components/ui/button'
 
-export default function LoginButton({ className, size, variant }: React.ComponentProps<'button'>
-  & VariantProps<typeof buttonVariants>) {
+type LoginButtonProps = React.ComponentPropsWithoutRef<'button'> & VariantProps<typeof buttonVariants>
+
+function LoginButton({
+  className = '',
+  size = 'default',
+  variant = 'outline',
+  ...props
+}: LoginButtonProps) {
   return (
     <Button
-      variant={variant || 'outline'}
-      size={size || 'default'}
+      variant={variant}
+      size={size}
       className={`
-        ${className}
         cursor-pointer rounded-sm border-hfm-red bg-transparent px-5 text-white
         hover:bg-hfm-red hover:text-white
+        ${className}
       `}
+      {...props}
     >
       Login
     </Button>
   )
 }
+
+export default LoginButton
