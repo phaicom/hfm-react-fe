@@ -10,7 +10,7 @@ export default function RegisterButton({ className, size, variant }: React.Compo
       size={size || 'default'}
       className={`
         ${className}
-        cursor-pointer rounded-sm bg-hfm-green px-6 text-white
+        cursor-pointer rounded-sm bg-hfm-green px-7 text-white
         hover:bg-green-700
       `}
     >

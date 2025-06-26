@@ -11,8 +11,8 @@ export default function NavBar() {
   return (
     <nav className="sticky top-0 z-50 flex bg-foreground text-[#eeeeee]">
       <div className={`
-        mx-33 flex w-full max-w-[82.5rem] items-center pt-2 pb-5.75
-        lg:mx-7
+        mx-6 flex w-full max-w-[82.5rem] items-center pt-2 pb-6
+        lg:mx-8
         xl:mx-auto
       `}
       >
@@ -88,11 +88,11 @@ export default function NavBar() {
         {menuOpen && (
           <div className={`
             absolute top-full right-0 left-0 z-50 flex h-full min-h-[70vh]
-            flex-col bg-foreground px-33 py-4
+            flex-col bg-foreground px-6 py-4
             lg:hidden
           `}
           >
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-8">
               <a href="#">Markets</a>
               <a href="#">Trading</a>
               <a href="#">Investing</a>
