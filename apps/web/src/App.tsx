@@ -7,6 +7,9 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <HeroSection />
+      <HeroSection />
+      <HeroSection />
       {/* <FeaturesSection />
       <PrizesSection />
       <WinnersSection />
