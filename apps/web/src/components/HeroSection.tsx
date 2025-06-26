@@ -39,72 +39,81 @@ function HeroSection() {
 
   return (
     <section
-      className="bg-cover bg-center text-white py-12 px-4 text-center md:text-left"
+      className={`
+        bg-cover bg-center px-4 py-12 text-center text-white
+        md:text-left
+      `}
       style={{ backgroundImage: 'url(\'/hero-bg.jpg\')' }}
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-2xl mx-auto bg-white text-black p-6 rounded-md grid gap-4 md:grid-cols-2"
+        className={`
+          mx-auto grid max-w-2xl gap-4 rounded-md bg-white p-6 text-black
+          md:grid-cols-2
+        `}
       >
         <input
           {...register('firstName')}
           placeholder="First Name"
-          className="p-2 border rounded"
+          className="rounded border p-2"
         />
-        {errors.firstName && <p className="text-red-500 text-sm col-span-full">{errors.firstName.message}</p>}
+        {errors.firstName && <p className="col-span-full text-sm text-red-500">{errors.firstName.message}</p>}
 
         <input
           {...register('lastName')}
           placeholder="Last Name"
-          className="p-2 border rounded"
+          className="rounded border p-2"
         />
-        {errors.lastName && <p className="text-red-500 text-sm col-span-full">{errors.lastName.message}</p>}
+        {errors.lastName && <p className="col-span-full text-sm text-red-500">{errors.lastName.message}</p>}
 
         <input
           {...register('country')}
           placeholder="Country"
-          className="p-2 border rounded"
+          className="rounded border p-2"
         />
-        {errors.country && <p className="text-red-500 text-sm col-span-full">{errors.country.message}</p>}
+        {errors.country && <p className="col-span-full text-sm text-red-500">{errors.country.message}</p>}
 
         <input
           {...register('phone')}
           placeholder="Phone"
-          className="p-2 border rounded"
+          className="rounded border p-2"
         />
-        {errors.phone && <p className="text-red-500 text-sm col-span-full">{errors.phone.message}</p>}
+        {errors.phone && <p className="col-span-full text-sm text-red-500">{errors.phone.message}</p>}
 
         <input
           {...register('email')}
           type="email"
           placeholder="Email"
-          className="p-2 border rounded"
+          className="rounded border p-2"
         />
-        {errors.email && <p className="text-red-500 text-sm col-span-full">{errors.email.message}</p>}
+        {errors.email && <p className="col-span-full text-sm text-red-500">{errors.email.message}</p>}
 
-        <select {...register('experience')} className="p-2 border rounded">
+        <select {...register('experience')} className="rounded border p-2">
           <option value="">Experience</option>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="expert">Expert</option>
         </select>
-        {errors.experience && <p className="text-red-500 text-sm col-span-full">{errors.experience.message}</p>}
+        {errors.experience && <p className="col-span-full text-sm text-red-500">{errors.experience.message}</p>}
 
         <div className="col-span-full flex items-center">
           <input type="checkbox" {...register('accept')} className="mr-2" />
           <label className="text-sm">I accept the Privacy Policy</label>
         </div>
-        {errors.accept && <p className="text-red-500 text-sm col-span-full">{errors.accept.message}</p>}
+        {errors.accept && <p className="col-span-full text-sm text-red-500">{errors.accept.message}</p>}
 
         <button
           type="submit"
-          className="bg-green-600 text-white p-2 rounded col-span-full"
+          className="col-span-full rounded bg-green-600 p-2 text-white"
         >
           Join Now
         </button>
 
         {submitted && (
-          <p className="text-green-600 col-span-full text-center font-medium mt-2">
+          <p className={`
+            col-span-full mt-2 text-center font-medium text-green-600
+          `}
+          >
             ✅ Thank you! Your form has been submitted.
           </p>
         )}
