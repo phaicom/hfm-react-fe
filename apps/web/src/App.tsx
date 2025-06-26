@@ -1,6 +1,6 @@
 import { Toaster } from '@/components/ui/sonner'
 import Header from './components/Header'
-import HeroSection from './components/Hero/HeroSection'
+import HeroSection from './components/Hero'
 
 function App() {
   return (
