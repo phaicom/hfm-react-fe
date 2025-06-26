@@ -2,10 +2,10 @@ import { Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Form } from '@/components/ui/form'
 import { useHeroForm } from '@/hooks/useHeroForm'
-import { HeroFormAgreement } from './HeroFormAgreement'
-import { HeroFormFields } from './HeroFormFields'
+import HeroFormAgreement from './HeroFormAgreement'
+import HeroFormFields from './HeroFormFields'
 
-export default function HeroForm() {
+function HeroForm() {
   const { form, loading, onSubmit } = useHeroForm()
 
   return (
@@ -42,3 +42,5 @@ export default function HeroForm() {
     </div>
   )
 }
+
+export default HeroForm

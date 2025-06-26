@@ -7,7 +7,7 @@ import {
   FormMessage,
 } from '@/components/ui/form'
 
-export function HeroFormAgreement({ form }: { form: any }) {
+function HeroFormAgreement({ form }: { form: any }) {
   return (
     <FormField
       control={form.control}
@@ -44,3 +44,5 @@ export function HeroFormAgreement({ form }: { form: any }) {
     />
   )
 }
+
+export default HeroFormAgreement

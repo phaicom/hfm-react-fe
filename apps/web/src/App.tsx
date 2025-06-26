@@ -1,17 +1,16 @@
+import FeaturesSection from '@/components/Features'
+import Header from '@/components/Header'
+import HeroSection from '@/components/Hero'
 import { Toaster } from '@/components/ui/sonner'
-import Header from './components/Header'
-import HeroSection from './components/Hero'
 
 function App() {
   return (
     <>
       <Header />
       <HeroSection />
+      <FeaturesSection />
       <HeroSection />
-      <HeroSection />
-      <HeroSection />
-      {/* <FeaturesSection />
-      <PrizesSection />
+      {/* <PrizesSection />
       <WinnersSection />
       <FAQSection />
       <Footer /> */}

@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/select'
 import { countries } from '@/utils/countries'
 
-export function HeroFormFields({ form }: { form: any }) {
+function HeroFormFields({ form }: { form: any }) {
   return (
     <>
       <div className={`
@@ -177,3 +177,5 @@ export function HeroFormFields({ form }: { form: any }) {
     </>
   )
 }
+
+export default HeroFormFields
