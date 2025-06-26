@@ -49,7 +49,7 @@ function FeaturesSection() {
               `}
             />
             <div className={`
-              absolute top-[55%] left-[75%] -translate-x-1/2 -translate-y-1/2
+              absolute top-[55%] left-[74%] -translate-x-1/2 -translate-y-1/2
               lg:hidden
             `}
             >
