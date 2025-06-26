@@ -3,8 +3,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
+import { countries } from '@/data/countries'
 import { heroFormSchema } from '@/schemas/heroFormSchema'
-import { countries } from '@/utils/countries'
 
 export function useHeroForm() {
   const form = useForm<HeroFormData>({

@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
-import { features } from '@/data/featuresData'
+import { features } from '@/data/features'
 
 function FeaturesMobileCarousel() {
   return (

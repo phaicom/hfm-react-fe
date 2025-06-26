@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { countries } from '@/utils/countries'
+import { countries } from '@/data/countries'
 
 function HeroFormFields({ form }: { form: any }) {
   return (
