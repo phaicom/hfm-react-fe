@@ -7,7 +7,7 @@ export const heroFormSchema = z
     firstName: z.string().min(1, 'First name is required'),
     lastName: z.string().min(1, 'Last name is required'),
     country: z.string().min(1, 'Country is required'),
-    code: z.string().min(1, 'Dial code is required'),
+    code: z.string().min(1, 'Code is required'),
     phone: z.string().min(1, 'Phone number is required'),
     email: z.string().email('Invalid email'),
     experience: z.string().min(1, 'Experience is required'),
