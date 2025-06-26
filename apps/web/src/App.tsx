@@ -1,6 +1,7 @@
 import FeaturesSection from '@/components/Features'
 import Header from '@/components/Header'
 import HeroSection from '@/components/Hero'
+import PrizesSection from '@/components/Prizes'
 import { Toaster } from '@/components/ui/sonner'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <HeroSection />
       <FeaturesSection />
-      <HeroSection />
+      <PrizesSection />
       {/* <PrizesSection />
       <WinnersSection />
       <FAQSection />

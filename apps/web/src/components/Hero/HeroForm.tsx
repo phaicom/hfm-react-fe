@@ -1,5 +1,4 @@
-import { Loader2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import JoinNowButton from '@/components/JoinNowButton'
 import { Form } from '@/components/ui/form'
 import { useHeroForm } from '@/hooks/useHeroForm'
 import HeroFormAgreement from './HeroFormAgreement'
@@ -25,17 +24,7 @@ function HeroForm() {
             <HeroFormAgreement form={form} />
           </div>
           <div className="flex w-full items-center justify-center pt-6">
-            <Button
-              type="submit"
-              disabled={loading}
-              className={`
-                h-13 w-1/2 rounded-sm bg-hfm-green text-lg font-bold text-white
-                hover:bg-green-700
-              `}
-            >
-              {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-              {loading ? 'Submitting...' : 'Join Now'}
-            </Button>
+            <JoinNowButton showTerms={false} loading={loading} />
           </div>
         </form>
       </Form>

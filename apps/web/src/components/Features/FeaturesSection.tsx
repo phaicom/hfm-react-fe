@@ -8,9 +8,9 @@ function FeaturesSection() {
   const rightFeatures = features.slice(2, 4)
 
   return (
-    <section className="bg-white pt-30">
+    <section className="bg-[#F4F4F4] pt-30">
       <div className="container mx-auto px-8 text-center">
-        <h2 className="mb-20 font-sofia-sans text-5xl uppercase">
+        <h2 className="mb-21 font-sofia-sans text-5xl uppercase">
           Quisque Rutrum
         </h2>
         <div className={`

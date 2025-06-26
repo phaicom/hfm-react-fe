@@ -10,7 +10,7 @@ function HeroSection() {
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div className={`
-        relative flex h-full w-full flex-col items-center px-4 pt-19 pb-20
+        relative flex h-full w-full flex-col items-center px-8 pt-19 pb-20
         text-center
       `}
       >
