@@ -10,9 +10,8 @@ export default function LoginButton({ className, size, variant }: React.Componen
       size={size || 'default'}
       className={`
         ${className}
-        cursor-pointer rounded-sm border-[#CD0511] bg-transparent px-5
-        text-white
-        hover:bg-[#CD0511] hover:text-white
+        cursor-pointer rounded-sm border-hfm-red bg-transparent px-5 text-white
+        hover:bg-hfm-red hover:text-white
       `}
     >
       Login

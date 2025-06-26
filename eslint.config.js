@@ -8,5 +8,11 @@ export default configs(
       html: true,
       css: true,
     },
+    ignores: ['apps/web/src/components/ui'],
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: 'apps/web/src/index.css',
+      },
+    },
   },
 )

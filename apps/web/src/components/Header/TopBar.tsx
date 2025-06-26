@@ -4,7 +4,7 @@ import Language from './Language'
 
 export default function TopBar() {
   return (
-    <nav className="bg-foreground flex text-[#eeeeee]">
+    <nav className="flex bg-foreground text-[#eeeeee]">
       <div className={`
         mx-8 hidden w-full max-w-[82.5rem] items-center justify-between pt-4
         lg:flex

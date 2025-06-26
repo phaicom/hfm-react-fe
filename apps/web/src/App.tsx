@@ -1,16 +1,10 @@
 import Header from './components/Header'
-import HeroSection from './components/HeroSection'
+import HeroSection from './components/Hero/HeroSection'
 
 function App() {
   return (
     <div>
       <Header />
-      <HeroSection />
-      <HeroSection />
-      <HeroSection />
-      <HeroSection />
-      <HeroSection />
-      <HeroSection />
       <HeroSection />
       {/* <FeaturesSection />
       <PrizesSection />

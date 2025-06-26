@@ -9,7 +9,7 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-foreground sticky top-0 z-50 flex text-[#eeeeee]">
+    <nav className="sticky top-0 z-50 flex bg-foreground text-[#eeeeee]">
       <div className={`
         mx-33 flex w-full max-w-[82.5rem] items-center pt-2 pb-5.75
         lg:mx-7
@@ -74,6 +74,7 @@ export default function NavBar() {
               <LoginButton size="sm" className="text-sm" />
               <Language />
               <button
+                type="button"
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="cursor-pointer"
               >
@@ -86,8 +87,8 @@ export default function NavBar() {
         {/* Mobile Dropdown Menu */}
         {menuOpen && (
           <div className={`
-            bg-foreground absolute top-full right-0 left-0 z-50 flex h-full
-            min-h-[70vh] flex-col px-33 py-4
+            absolute top-full right-0 left-0 z-50 flex h-full min-h-[70vh]
+            flex-col bg-foreground px-33 py-4
             lg:hidden
           `}
           >
