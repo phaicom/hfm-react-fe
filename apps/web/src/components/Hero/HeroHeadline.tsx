@@ -1,4 +1,4 @@
-export default function HeroHeadline() {
+function HeroHeadline() {
   return (
     <div className="text-center text-white">
       <h1 className={`
@@ -19,3 +19,5 @@ export default function HeroHeadline() {
     </div>
   )
 }
+
+export default HeroHeadline
