@@ -12,7 +12,7 @@ function LeaderboardSection() {
       </h2>
       <div
         className={`
-          mx-auto mb-20 grid max-w-[87rem] grid-cols-1 gap-28 px-8
+          mx-auto mb-18 grid max-w-[87rem] grid-cols-1 gap-28 px-8
           lg:grid-cols-2
         `}
       >

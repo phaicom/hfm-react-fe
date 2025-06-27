@@ -14,8 +14,8 @@ function MobileMenu({ open, onClose }: MobileMenuProps) {
   return (
     <div
       className={`
-        absolute top-full right-0 left-0 z-50 flex h-full min-h-[70vh] flex-col
-        bg-foreground px-6 py-4
+        absolute top-full right-0 left-0 z-50 -mt-1 flex h-full min-h-[70vh]
+        flex-col bg-foreground px-6 py-4
         lg:hidden
       `}
       onClick={onClose}
