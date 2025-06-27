@@ -132,6 +132,12 @@
     @apply bg-background text-foreground text-[1rem] m-0 font-[400] leading-1.5;
   }
 
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
   .hfm-gradient {
     @apply bg-gradient-to-r from-[#FCD678] via-[#FCD678] to-[#BC8C2F];
   }

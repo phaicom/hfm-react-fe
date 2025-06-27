@@ -1,3 +1,4 @@
+import ErrorBoundary from '@/components/ErrorBoundary'
 import { FaqsSection } from '@/components/Faqs'
 import { FeaturesSection } from '@/components/Features'
 import { Footer } from '@/components/Footer'
@@ -11,11 +12,13 @@ function App() {
   return (
     <>
       <Header />
-      <HeroSection />
-      <FeaturesSection />
-      <PrizesSection />
-      <LeaderboardSection />
-      <FaqsSection />
+      <ErrorBoundary>
+        <HeroSection />
+        <FeaturesSection />
+        <PrizesSection />
+        <LeaderboardSection />
+        <FaqsSection />
+      </ErrorBoundary>
       <Footer />
       <Toaster position="top-right" richColors />
     </>
