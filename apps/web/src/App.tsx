@@ -1,3 +1,4 @@
+import FaqsSection from '@/components/Faqs'
 import FeaturesSection from '@/components/Features'
 import Header from '@/components/Header'
 import HeroSection from '@/components/Hero'
@@ -13,10 +14,7 @@ function App() {
       <FeaturesSection />
       <PrizesSection />
       <LeaderboardSection />
-      {/* <PrizesSection />
-      <WinnersSection />
-      <FAQSection />
-      <Footer /> */}
+      <FaqsSection />
       <Toaster position="top-right" richColors />
     </>
   )
