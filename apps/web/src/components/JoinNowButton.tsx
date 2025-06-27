@@ -26,7 +26,7 @@ function JoinNowButton({ loading = false, onClick, className, showTerms = true }
         {loading ? 'Submitting...' : 'Join Now'}
       </Button>
       {showTerms && (
-        <span className="text-xs text-[#A8A8A8]">
+        <span className="text-xs text-hfm-gray-light">
           Terms and Conditions apply
         </span>
       )}
