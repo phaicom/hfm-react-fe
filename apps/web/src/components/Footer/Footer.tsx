@@ -1,5 +1,3 @@
-'use client'
-
 import appstore from '@/assets/appstore.svg'
 import googleplay from '@/assets/googleplay.svg'
 import socials from '@/assets/socials.png'

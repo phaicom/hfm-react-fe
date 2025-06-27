@@ -1,1 +1,1 @@
-export { default } from './PrizesSection'
+export { default as PrizesSection } from './PrizesSection'

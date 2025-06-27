@@ -1,18 +1,11 @@
 import LoginButton from './Bottom/LoginButton'
 import RegisterButton from './Bottom/RegisterButton'
+import { links } from './headerData'
 
 interface MobileMenuProps {
   open: boolean
   onClose: () => void
 }
-
-const links = [
-  { href: '#', label: 'Markets' },
-  { href: '#', label: 'Trading' },
-  { href: '#', label: 'Investing' },
-  { href: '#', label: 'Tools & Education' },
-  { href: '#', label: 'Company' },
-]
 
 function MobileMenu({ open, onClose }: MobileMenuProps) {
   if (!open) {

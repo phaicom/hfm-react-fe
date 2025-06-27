@@ -1,32 +1,28 @@
 import JoinNowButton from '@/components/JoinNowButton'
 import { Card, CardContent } from '@/components/ui/card'
 import { useScrollToTop } from '@/hooks/useScrollToTop'
+import { prizes } from './prizesData'
 
 function PrizesSection() {
-  const prizes = [
-    { place: '1', amount: '$1000', description: 'CRAS DAPIBUS & CRAS DAPIBUS' },
-    { place: '2', amount: '$1000', description: 'CRAS DAPIBUS' },
-    { place: '3', amount: '$1000', description: 'CRAS DAPIBUS' },
-  ]
-
   return (
     <section className="bg-white pt-30 pb-20 text-center">
       <h2 className="mb-20 font-sofia-sans text-5xl">PRIZES</h2>
-
-      <div className={`
-        mx-auto mb-19 grid max-w-[87rem] grid-cols-1 gap-5 px-8
-        md:grid-cols-3
-      `}
+      <div
+        className={`
+          mx-auto mb-19 grid max-w-[87rem] grid-cols-1 gap-5 px-8
+          md:grid-cols-3
+        `}
       >
         {prizes.map((prize, index) => (
           <Card
             key={index}
             className="border-none bg-hfm-bg-gray py-10 shadow-none"
           >
-            <CardContent className={`
-              mx-auto flex flex-col items-center gap-7
-              lg:max-w-[50%]
-            `}
+            <CardContent
+              className={`
+                mx-auto flex flex-col items-center gap-7
+                lg:max-w-[50%]
+              `}
             >
               <img
                 src={`/medal-0${index + 1}.svg`}
@@ -46,7 +42,6 @@ function PrizesSection() {
           </Card>
         ))}
       </div>
-
       <JoinNowButton onClick={useScrollToTop} />
     </section>
   )

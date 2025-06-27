@@ -1,10 +1,4 @@
-const navLinks = [
-  { href: '#', label: 'Markets' },
-  { href: '#', label: 'Trading' },
-  { href: '#', label: 'Investing' },
-  { href: '#', label: 'Tools & Education' },
-  { href: '#', label: 'Company' },
-]
+import { links } from './headerData'
 
 function HeaderNav() {
   return (
@@ -14,7 +8,7 @@ function HeaderNav() {
         lg:flex
       `}
       >
-        {navLinks.map((link) => (
+        {links.map((link) => (
           <li key={link.href}>
             <a
               href={link.href}

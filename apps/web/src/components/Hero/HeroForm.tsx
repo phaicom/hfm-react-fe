@@ -24,7 +24,7 @@ function HeroForm() {
             <HeroFormAgreement form={form} />
           </div>
           <div className="flex w-full items-center justify-center pt-6">
-            <JoinNowButton showTerms={false} loading={loading} />
+            <JoinNowButton type="submit" showTerms={false} loading={loading} />
           </div>
         </form>
       </Form>

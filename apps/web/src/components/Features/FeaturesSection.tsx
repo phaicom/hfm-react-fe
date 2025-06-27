@@ -1,5 +1,5 @@
 import mobile from '@/assets/mobile.png'
-import { features } from '@/data/features'
+import { features } from '@/components/Features/featuresData'
 
 import FeaturesMobileCarousel from './FeaturesMobileCarousel'
 

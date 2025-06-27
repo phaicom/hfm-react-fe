@@ -1,1 +1,1 @@
-export { default } from './FaqsSection'
+export { default as FaqsSection } from './FaqsSection'

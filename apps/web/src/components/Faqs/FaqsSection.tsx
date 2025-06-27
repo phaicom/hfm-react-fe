@@ -1,12 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import { faqs } from './faqsData'
 
 function FaqsSection() {
-  const faqs = [
-    { question: 'Question A', answer: 'Answer A' },
-    { question: 'Question B', answer: 'Answer B' },
-    { question: 'Question C', answer: 'Answer C' },
-    { question: 'Question D', answer: 'Answer D' },
-  ]
   return (
     <section className="w-full bg-hfm-bg-gray px-4 pt-15 pb-39">
       <h2 className="mb-20 text-center font-sofia-sans text-5xl">FAQs</h2>
