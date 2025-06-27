@@ -15,9 +15,33 @@ catalogs:
     '@eslint-react/eslint-plugin':
       specifier: ^1.52.2
       version: 1.52.2
+    '@hookform/resolvers':
+      specifier: ^5.1.1
+      version: 5.1.1
     '@phaicom/eslint-config':
       specifier: ^0.3.1
       version: 0.3.1
+    '@radix-ui/react-accordion':
+      specifier: ^1.2.11
+      version: 1.2.11
+    '@radix-ui/react-checkbox':
+      specifier: ^1.3.2
+      version: 1.3.2
+    '@radix-ui/react-label':
+      specifier: ^2.1.7
+      version: 2.1.7
+    '@radix-ui/react-select':
+      specifier: ^2.2.5
+      version: 2.2.5
+    '@radix-ui/react-slot':
+      specifier: ^1.2.3
+      version: 1.2.3
+    '@tailwindcss/vite':
+      specifier: ^4.1.11
+      version: 4.1.11
+    '@types/node':
+      specifier: ^24.0.4
+      version: 24.0.4
     '@types/react':
       specifier: ^19.1.8
       version: 19.1.8
@@ -27,9 +51,21 @@ catalogs:
     '@vitejs/plugin-react-swc':
       specifier: ^3.10.2
       version: 3.10.2
+    class-variance-authority:
+      specifier: ^0.7.1
+      version: 0.7.1
+    clsx:
+      specifier: ^2.1.1
+      version: 2.1.1
+    embla-carousel-react:
+      specifier: ^8.6.0
+      version: 8.6.0
     eslint:
       specifier: ^9.29.0
       version: 9.29.0
+    eslint-plugin-better-tailwindcss:
+      specifier: ^3.4.2
+      version: 3.4.2
     eslint-plugin-format:
       specifier: ^1.0.1
       version: 1.0.1
@@ -42,27 +78,54 @@ catalogs:
     globals:
       specifier: ^16.2.0
       version: 16.2.0
+    libphonenumber-js:
+      specifier: ^1.12.9
+      version: 1.12.9
     lint-staged:
       specifier: ^16.1.2
       version: 16.1.2
+    lucide-react:
+      specifier: ^0.523.0
+      version: 0.523.0
+    next-themes:
+      specifier: ^0.4.6
+      version: 0.4.6
     react:
       specifier: ^19.1.0
       version: 19.1.0
     react-dom:
       specifier: ^19.1.0
       version: 19.1.0
+    react-hook-form:
+      specifier: ^7.58.1
+      version: 7.58.1
     simple-git-hooks:
       specifier: ^2.13.0
       version: 2.13.0
+    sonner:
+      specifier: ^2.0.5
+      version: 2.0.5
+    tailwind-merge:
+      specifier: ^3.3.1
+      version: 3.3.1
+    tailwindcss:
+      specifier: ^4.1.11
+      version: 4.1.11
     turbo:
       specifier: ^2.5.4
       version: 2.5.4
+    tw-animate-css:
+      specifier: ^1.3.4
+      version: 1.3.4
     typescript:
       specifier: ~5.8.3
       version: 5.8.3
     vite:
       specifier: ^6.3.5
       version: 6.3.5
+    zod:
+      specifier: ^3.25.67
+      version: 3.25.67
 
 importers:
 
@@ -84,7 +147,7 @@ importers:
         specifier: 'catalog:'
         version: 9.29.0(jiti@2.4.2)
       eslint-plugin-better-tailwindcss:
-        specifier: ^3.4.2
+        specifier: 'catalog:'
         version: 3.4.2(eslint@9.29.0(jiti@2.4.2))(tailwindcss@4.1.11)
       eslint-plugin-format:
         specifier: 'catalog:'
@@ -111,40 +174,43 @@ importers:
   apps/web:
     dependencies:
       '@hookform/resolvers':
-        specifier: ^5.1.1
+        specifier: 'catalog:'
         version: 5.1.1(react-hook-form@7.58.1(react@19.1.0))
+      '@radix-ui/react-accordion':
+        specifier: 'catalog:'
+        version: 1.2.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-checkbox':
-        specifier: ^1.3.2
+        specifier: 'catalog:'
         version: 1.3.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-label':
-        specifier: ^2.1.7
+        specifier: 'catalog:'
         version: 2.1.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-select':
-        specifier: ^2.2.5
+        specifier: 'catalog:'
         version: 2.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-slot':
-        specifier: ^1.2.3
+        specifier: 'catalog:'
         version: 1.2.3(@types/react@19.1.8)(react@19.1.0)
       '@tailwindcss/vite':
-        specifier: ^4.1.11
+        specifier: 'catalog:'
         version: 4.1.11(vite@6.3.5(@types/node@24.0.4)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0))
       class-variance-authority:
-        specifier: ^0.7.1
+        specifier: 'catalog:'
         version: 0.7.1
       clsx:
-        specifier: ^2.1.1
+        specifier: 'catalog:'
         version: 2.1.1
       embla-carousel-react:
-        specifier: ^8.6.0
+        specifier: 'catalog:'
         version: 8.6.0(react@19.1.0)
       libphonenumber-js:
-        specifier: ^1.12.9
+        specifier: 'catalog:'
         version: 1.12.9
       lucide-react:
-        specifier: ^0.523.0
+        specifier: 'catalog:'
         version: 0.523.0(react@19.1.0)
       next-themes:
-        specifier: ^0.4.6
+        specifier: 'catalog:'
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: 'catalog:'
@@ -153,23 +219,23 @@ importers:
         specifier: 'catalog:'
         version: 19.1.0(react@19.1.0)
       react-hook-form:
-        specifier: ^7.58.1
+        specifier: 'catalog:'
         version: 7.58.1(react@19.1.0)
       sonner:
-        specifier: ^2.0.5
+        specifier: 'catalog:'
         version: 2.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tailwind-merge:
-        specifier: ^3.3.1
+        specifier: 'catalog:'
         version: 3.3.1
       tailwindcss:
-        specifier: ^4.1.11
+        specifier: 'catalog:'
         version: 4.1.11
       zod:
-        specifier: ^3.25.67
+        specifier: 'catalog:'
         version: 3.25.67
     devDependencies:
       '@types/node':
-        specifier: ^24.0.4
+        specifier: 'catalog:'
         version: 24.0.4
       '@types/react':
         specifier: 'catalog:'
@@ -184,7 +250,7 @@ importers:
         specifier: 'catalog:'
         version: 16.2.0
       tw-animate-css:
-        specifier: ^1.3.4
+        specifier: 'catalog:'
         version: 1.3.4
       vite:
         specifier: 'catalog:'
@@ -715,6 +781,19 @@ packages:
   '@radix-ui/primitive@1.1.2':
     resolution: {integrity: sha512-XnbHrrprsNqZKQhStrSwgRUQzoCI1glLzdw79xiZPoofhGICeZRSQ3dIxAKH1gb3OHfNf4d6f+vAv3kil2eggA==}
 
+  '@radix-ui/react-accordion@1.2.11':
+    resolution: {integrity: sha512-l3W5D54emV2ues7jjeG1xcyN7S3jnK3zE2zHqgn0CmMsy9lNJwmgcrmaxS+7ipw15FAivzKNzH3d5EcGoFKw0A==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
   '@radix-ui/react-arrow@1.1.7':
     resolution: {integrity: sha512-F+M1tLhO+mlQaOWspE8Wstg+z6PwxwRd8oQ8IXceWz92kfAmalTRf0EjrouQeo7QssEPfCn05B4Ihs1K9WQ/7w==}
     peerDependencies:
@@ -730,6 +809,19 @@ packages:
 
   '@radix-ui/react-checkbox@1.3.2':
     resolution: {integrity: sha512-yd+dI56KZqawxKZrJ31eENUwqc1QSqg4OZ15rybGjF2ZNwMO+wCyHzAVLRp9qoYJf7kYy0YpZ2b0JCzJ42HZpA==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@radix-ui/react-collapsible@1.1.11':
+    resolution: {integrity: sha512-2qrRsVGSCYasSz1RFOorXwl0H7g7J1frQtgpQgYrt+MOidtPAINHn9CPovQXb83r8ahapdx3Tu0fa/pdFFSdPg==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -3818,6 +3910,23 @@ snapshots:
 
   '@radix-ui/primitive@1.1.2': {}
 
+  '@radix-ui/react-accordion@1.2.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@radix-ui/primitive': 1.1.2
+      '@radix-ui/react-collapsible': 1.1.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-collection': 1.1.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-direction': 1.1.1(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-id': 1.1.1(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.1.8)(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    optionalDependencies:
+      '@types/react': 19.1.8
+      '@types/react-dom': 19.1.6(@types/react@19.1.8)
+
   '@radix-ui/react-arrow@1.1.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3837,6 +3946,22 @@ snapshots:
       '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.1.8)(react@19.1.0)
       '@radix-ui/react-use-previous': 1.1.1(@types/react@19.1.8)(react@19.1.0)
       '@radix-ui/react-use-size': 1.1.1(@types/react@19.1.8)(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    optionalDependencies:
+      '@types/react': 19.1.8
+      '@types/react-dom': 19.1.6(@types/react@19.1.8)
+
+  '@radix-ui/react-collapsible@1.1.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@radix-ui/primitive': 1.1.2
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-id': 1.1.1(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-presence': 1.1.4(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.1.8)(react@19.1.0)
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
     optionalDependencies:

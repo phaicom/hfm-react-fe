@@ -21,7 +21,7 @@
     "@eslint-react/eslint-plugin": "catalog:",
     "@phaicom/eslint-config": "catalog:",
     "eslint": "catalog:",
-    "eslint-plugin-better-tailwindcss": "^3.4.2",
+    "eslint-plugin-better-tailwindcss": "catalog:",
     "eslint-plugin-format": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",
