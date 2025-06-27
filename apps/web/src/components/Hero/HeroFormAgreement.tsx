@@ -17,7 +17,7 @@ function HeroFormAgreement({ form }: { form: any }) {
           <div className="flex items-start">
             <FormControl>
               <Checkbox
-                className="border-hfm-gray"
+                className="cursor-pointer border-hfm-gray"
                 checked={field.value}
                 onCheckedChange={field.onChange}
               />

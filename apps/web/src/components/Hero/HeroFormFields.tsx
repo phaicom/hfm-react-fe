@@ -14,6 +14,8 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 
+import { experiences } from './heroData'
+
 function HeroFormFields({ form }: { form: any }) {
   return (
     <>
@@ -69,7 +71,7 @@ function HeroFormFields({ form }: { form: any }) {
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className={`
-                    !h-11 w-full border-hfm-gray
+                    !h-11 w-full cursor-pointer border-hfm-gray
                     data-[placeholder]:text-hfm-gray
                   `}
                   >
@@ -78,7 +80,7 @@ function HeroFormFields({ form }: { form: any }) {
                 </FormControl>
                 <SelectContent>
                   {countries.map((c) => (
-                    <SelectItem key={c.code} value={c.code}>
+                    <SelectItem className="cursor-pointer" key={c.code} value={c.code}>
                       {c.name}
                     </SelectItem>
                   ))}
@@ -156,7 +158,7 @@ function HeroFormFields({ form }: { form: any }) {
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className={`
-                    !h-11 w-full border-hfm-gray
+                    !h-11 w-full cursor-pointer border-hfm-gray
                     data-[placeholder]:text-hfm-gray
                   `}
                   >
@@ -164,9 +166,15 @@ function HeroFormFields({ form }: { form: any }) {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="beginner">Beginner</SelectItem>
-                  <SelectItem value="intermediate">Intermediate</SelectItem>
-                  <SelectItem value="advanced">Advanced</SelectItem>
+                  {experiences.map((experience) => (
+                    <SelectItem
+                      key={experience.value}
+                      className="cursor-pointer"
+                      value={experience.value}
+                    >
+                      {experience.text}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
               <FormMessage />

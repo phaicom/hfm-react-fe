@@ -9,7 +9,7 @@ function HeaderNav() {
       `}
       >
         {links.map((link) => (
-          <li key={link.href}>
+          <li key={link.href} className="hover:opacity-80">
             <a
               href={link.href}
             >

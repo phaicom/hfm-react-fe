@@ -17,7 +17,9 @@ function FaqsSection() {
         >
           {faqs.map((faq, idx) => (
             <AccordionItem key={faq.question} value={`item-${idx + 1}`}>
-              <AccordionTrigger className="py-5 pl-14 text-xl">{faq.question}</AccordionTrigger>
+              <AccordionTrigger className="cursor-pointer py-5 pl-14 text-xl">
+                {faq.question}
+              </AccordionTrigger>
               <AccordionContent className={`
                 border-t-2 border-[#B9B7B7] py-5.5 pl-15 text-[1rem]
               `}

@@ -20,8 +20,8 @@ function JoinNowButton({
         type={type}
         disabled={loading || props.disabled}
         className={`
-          h-13 w-1/2 max-w-[19rem] rounded-sm bg-hfm-green text-lg font-bold
-          text-white
+          h-13 w-1/2 max-w-[19rem] cursor-pointer rounded-sm bg-hfm-green
+          text-lg font-bold text-white
           hover:bg-green-700
           ${className}
         `}
