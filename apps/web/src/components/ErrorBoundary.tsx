@@ -26,7 +26,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
   render() {
     if (this.state.hasError) {
       return (
-        <div className="flex h-full items-center justify-center">
+        <div className="flex min-h-[70vh] items-center justify-center">
           <h2>Something went wrong.</h2>
         </div>
       )

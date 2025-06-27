@@ -1,12 +1,14 @@
+import { lazy, Suspense } from 'react'
 import ErrorBoundary from '@/components/ErrorBoundary'
-import { FaqsSection } from '@/components/Faqs'
 import { FeaturesSection } from '@/components/Features'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { HeroSection } from '@/components/Hero'
-import { LeaderboardSection } from '@/components/Leaderboard'
-import { PrizesSection } from '@/components/Prizes'
 import { Toaster } from '@/components/ui/sonner'
+
+const PrizesSection = lazy(() => import('@/components/Prizes/PrizesSection'))
+const LeaderboardSection = lazy(() => import('@/components/Leaderboard/LeaderboardSection'))
+const FaqsSection = lazy(() => import('@/components/Faqs/FaqsSection'))
 
 function App() {
   return (
@@ -15,9 +17,11 @@ function App() {
       <ErrorBoundary>
         <HeroSection />
         <FeaturesSection />
-        <PrizesSection />
-        <LeaderboardSection />
-        <FaqsSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <PrizesSection />
+          <LeaderboardSection />
+          <FaqsSection />
+        </Suspense>
       </ErrorBoundary>
       <Footer />
       <Toaster position="top-right" richColors />

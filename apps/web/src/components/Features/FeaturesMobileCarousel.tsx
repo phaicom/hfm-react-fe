@@ -20,7 +20,7 @@ function FeaturesMobileCarousel() {
       className="w-full max-w-xs"
     >
       <CarouselContent className={`
-        -mt-1 h-[200px]
+        -mt-1 h-[160px]
         md:h-[360px]
       `}
       >
@@ -33,7 +33,11 @@ function FeaturesMobileCarousel() {
             `}
           >
             <div className="p-1">
-              <Card className="py-4">
+              <Card className={`
+                py-1
+                md:py-4
+              `}
+              >
                 <CardContent className={`
                   flex w-[120px] flex-col items-center justify-center p-2
                   md:w-[200px]
@@ -44,7 +48,13 @@ function FeaturesMobileCarousel() {
                     alt={feature.alt}
                     className="mb-2 h-12"
                   />
-                  <span className="text-center text-sm text-gray-500">{feature.description}</span>
+                  <span className={`
+                    text-center text-xs text-gray-500
+                    md:text-sm
+                  `}
+                  >
+                    {feature.description}
+                  </span>
                 </CardContent>
               </Card>
             </div>

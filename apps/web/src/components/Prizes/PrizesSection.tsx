@@ -1,6 +1,6 @@
 import JoinNowButton from '@/components/JoinNowButton'
-import { Card, CardContent } from '@/components/ui/card'
 import { useScrollToTop } from '@/hooks/useScrollToTop'
+import PrizeCard from './PrizeCard'
 import { prizes } from './prizesData'
 
 function PrizesSection() {
@@ -14,32 +14,7 @@ function PrizesSection() {
         `}
       >
         {prizes.map((prize, index) => (
-          <Card
-            key={index}
-            className="border-none bg-hfm-bg-gray py-10 shadow-none"
-          >
-            <CardContent
-              className={`
-                mx-auto flex flex-col items-center gap-7
-                lg:max-w-[50%]
-              `}
-            >
-              <img
-                src={`/medal-0${index + 1}.svg`}
-                alt={`medal ${index + 1}`}
-                className="h-25 w-25"
-              />
-              <h3 className={`
-                text-3xl font-bold text-black
-                md:text-4xl
-                lg:text-5xl
-              `}
-              >
-                {prize.amount}
-              </h3>
-              <p className="pt-4 text-xl text-black">{prize.description}</p>
-            </CardContent>
-          </Card>
+          <PrizeCard key={index} amount={prize.amount} description={prize.description} image={prize.image} />
         ))}
       </div>
       <JoinNowButton onClick={useScrollToTop} />

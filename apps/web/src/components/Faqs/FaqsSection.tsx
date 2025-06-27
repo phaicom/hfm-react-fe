@@ -1,7 +1,25 @@
+import { useMemo } from 'react'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { faqs } from './faqsData'
 
 function FaqsSection() {
+  const faqItems = useMemo(
+    () =>
+      faqs.map((faq, idx) => (
+        <AccordionItem key={faq.question} value={`item-${idx + 1}`}>
+          <AccordionTrigger className="cursor-pointer py-5 pl-14 text-xl">
+            {faq.question}
+          </AccordionTrigger>
+          <AccordionContent
+            className="border-t-2 border-[#B9B7B7] py-5.5 pl-15 text-[1rem]"
+          >
+            {faq.answer}
+          </AccordionContent>
+        </AccordionItem>
+      )),
+    [faqs],
+  )
+
   return (
     <section className="w-full bg-hfm-bg-gray px-4 pt-15 pb-39">
       <h2 className="mb-20 text-center font-sofia-sans text-5xl">FAQs</h2>
@@ -15,19 +33,7 @@ function FaqsSection() {
           `}
           defaultValue="item-1"
         >
-          {faqs.map((faq, idx) => (
-            <AccordionItem key={faq.question} value={`item-${idx + 1}`}>
-              <AccordionTrigger className="cursor-pointer py-5 pl-14 text-xl">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className={`
-                border-t-2 border-[#B9B7B7] py-5.5 pl-15 text-[1rem]
-              `}
-              >
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
+          {faqItems}
         </Accordion>
       </div>
     </section>

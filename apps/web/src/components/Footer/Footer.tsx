@@ -6,7 +6,8 @@ function Footer() {
   return (
     <footer className="bg-hfm-bg-black px-8 pt-14 pb-29 text-white">
       <div className={`
-        mx-auto grid max-w-[75%] grid-cols-1 gap-10
+        mx-auto grid grid-cols-1 gap-10
+        md:max-w-[75%]
         xl:grid-cols-9
       `}
       >
@@ -19,13 +20,31 @@ function Footer() {
         >
           <div className="space-y-5">
             <h4 className="font-bold">Find us on</h4>
-            <img src={socials} alt="Social media links" className="-ml-6" />
+            <img
+              src={socials}
+              alt="Social media links"
+              loading="lazy"
+              className={`
+                -ml-3
+                md:-ml-6
+              `}
+            />
           </div>
           <div className="space-y-5">
             <h4 className="font-bold">Download HFM App</h4>
             <div className="flex space-x-2">
-              <img src={appstore} alt="App Store" className="cursor-pointer" />
-              <img src={googleplay} alt="Google Play" className="cursor-pointer" />
+              <img
+                src={appstore}
+                alt="App Store"
+                loading="lazy"
+                className="cursor-pointer"
+              />
+              <img
+                src={googleplay}
+                alt="Google Play"
+                loading="lazy"
+                className="cursor-pointer"
+              />
             </div>
           </div>
         </div>

@@ -43,7 +43,7 @@ function FeaturesSection() {
               src={mobile}
               alt="Phones"
               className={`
-                max-w-sm object-contain
+                max-w-xs object-contain
                 md:max-w-xl
                 lg:max-w-2xl
               `}

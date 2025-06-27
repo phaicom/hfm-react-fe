@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { countries } from '@/components/Hero/countries'
 import {
   FormControl,
@@ -17,6 +18,15 @@ import {
 import { experiences } from './heroData'
 
 function HeroFormFields({ form }: { form: any }) {
+  const countriesItems = useMemo(
+    () =>
+      countries.map((c) => (
+        <SelectItem className="cursor-pointer" key={c.code} value={c.code}>
+          {c.name}
+        </SelectItem>
+      )),
+    [countries],
+  )
   return (
     <>
       <div className={`
@@ -33,6 +43,8 @@ function HeroFormFields({ form }: { form: any }) {
                 <Input
                   className="h-11 border-hfm-gray !placeholder-hfm-gray"
                   placeholder="First Name"
+                  aria-label="First Name"
+                  autoComplete="given-name"
                   {...field}
                 />
               </FormControl>
@@ -49,6 +61,8 @@ function HeroFormFields({ form }: { form: any }) {
                 <Input
                   className="h-11 border-hfm-gray !placeholder-hfm-gray"
                   placeholder="Last Name"
+                  aria-label="Last Name"
+                  autoComplete="family-name"
                   {...field}
                 />
               </FormControl>
@@ -70,20 +84,18 @@ function HeroFormFields({ form }: { form: any }) {
             <FormItem className="w-full">
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className={`
-                    !h-11 w-full cursor-pointer border-hfm-gray
-                    data-[placeholder]:text-hfm-gray
-                  `}
+                  <SelectTrigger
+                    aria-label="Country"
+                    className={`
+                      !h-11 w-full cursor-pointer border-hfm-gray
+                      data-[placeholder]:text-hfm-gray
+                    `}
                   >
                     <SelectValue placeholder="Country" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  {countries.map((c) => (
-                    <SelectItem className="cursor-pointer" key={c.code} value={c.code}>
-                      {c.name}
-                    </SelectItem>
-                  ))}
+                  {countriesItems}
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -101,6 +113,7 @@ function HeroFormFields({ form }: { form: any }) {
                   <Input
                     className="h-11 border-hfm-gray !placeholder-hfm-gray"
                     placeholder="Code"
+                    aria-label="Country Code"
                     readOnly
                     {...field}
                   />
@@ -118,6 +131,8 @@ function HeroFormFields({ form }: { form: any }) {
                   <Input
                     className="h-11 border-hfm-gray !placeholder-hfm-gray"
                     placeholder="Phone"
+                    aria-label="Phone Number"
+                    autoComplete="tel"
                     {...field}
                   />
                 </FormControl>
@@ -142,6 +157,8 @@ function HeroFormFields({ form }: { form: any }) {
                 <Input
                   className="h-11 border-hfm-gray !placeholder-hfm-gray"
                   placeholder="Email"
+                  aria-label="Email"
+                  autoComplete="email"
                   {...field}
                 />
               </FormControl>
@@ -157,10 +174,12 @@ function HeroFormFields({ form }: { form: any }) {
             <FormItem className="w-full">
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger className={`
-                    !h-11 w-full cursor-pointer border-hfm-gray
-                    data-[placeholder]:text-hfm-gray
-                  `}
+                  <SelectTrigger
+                    aria-label="Experience"
+                    className={`
+                      !h-11 w-full cursor-pointer border-hfm-gray
+                      data-[placeholder]:text-hfm-gray
+                    `}
                   >
                     <SelectValue placeholder="Experience" />
                   </SelectTrigger>
