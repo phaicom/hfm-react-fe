@@ -15,7 +15,7 @@ function TopBar() {
           Member of HF Markets Group
         </small>
         <div className="flex items-center gap-7 text-sm">
-          {/* Download App Button */}
+          {/* Download app bottom */}
           <Button
             variant="outline"
             size="sm"

@@ -20,7 +20,7 @@ function NavBar() {
       >
         {/* Main navigation */}
         <div className="flex w-full items-center">
-          {/* Left section: Logo and Desktop Menu */}
+          {/* Logo adn menu */}
           <div className={`
             flex items-center gap-4
             xl:gap-23
@@ -30,11 +30,11 @@ function NavBar() {
             <HeaderNav />
           </div>
 
-          {/* Right section: Auth Buttons and Mobile Menu Toggle */}
+          {/* Auth and mobile menu toggle */}
           <div className="ml-auto flex items-center">
             <HeaderActions />
 
-            {/* Mobile menu toggle */}
+            {/* Mobile menu toggle group */}
             <div className={`
               ml-4 flex items-center gap-4
               lg:hidden
@@ -54,7 +54,7 @@ function NavBar() {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile dropdown menu */}
         <MobileMenu open={menuOpen} onClose={closeMenu} />
       </div>
     </nav>

@@ -10,7 +10,7 @@ function Footer() {
         xl:grid-cols-9
       `}
       >
-        {/* Social and App Links */}
+        {/* Social adn apps links */}
         <div className={`
           flex flex-col gap-7
           xl:col-span-3
