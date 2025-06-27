@@ -38,6 +38,7 @@ pnpm run build
 
 This project uses my custom eslint rule [eslint-config
 ](https://github.com/phaicom/eslint-config)
+For it to work, install the recommended VS Code extensions. The code will be formatted by Eslint once the file is saved.
 
 ## PS
 
