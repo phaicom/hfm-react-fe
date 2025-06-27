@@ -117,6 +117,8 @@
   --color-hfm-red: #cd0511;
   --color-hfm-green: #179149;
   --color-hfm-gray: #999999;
+  --color-hfm-gray-light: #a8a8a8;
+  --color-hfm-bg-gray: #f4f4f4;
 }
 
 @layer base {
@@ -125,5 +127,13 @@
   }
   body {
     @apply bg-background text-foreground text-[1rem] m-0 font-[400] leading-1.5;
+  }
+
+  .hfm-gradient {
+    @apply bg-gradient-to-r from-[#FCD678] via-[#FCD678] to-[#BC8C2F];
+  }
+
+  .clip-text {
+    @apply bg-clip-text text-transparent;
   }
 }

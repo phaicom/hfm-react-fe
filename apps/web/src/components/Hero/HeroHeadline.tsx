@@ -2,8 +2,7 @@ function HeroHeadline() {
   return (
     <div className="text-center text-white">
       <h1 className={`
-        inline-block bg-gradient-to-r from-[#FCD678] via-[#FCD678] to-[#BC8C2F]
-        bg-clip-text font-sofia-sans text-5xl font-bold text-transparent
+        hfm-gradient clip-text inline-block font-sofia-sans text-5xl font-bold
         md:text-[70px]
       `}
       >

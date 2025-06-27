@@ -14,13 +14,13 @@ function FeaturesSection() {
           Quisque Rutrum
         </h2>
         <div className={`
-          flex flex-col items-center justify-center gap-12
+          flex flex-col items-center justify-center gap-9
           lg:flex-row
         `}
         >
           {/* Left features */}
           <div className={`
-            mb-auto hidden max-w-50 flex-col items-center gap-34 text-left
+            -mt-5 mb-auto hidden max-w-50 flex-col items-center gap-38 text-left
             text-sm text-gray-600
             lg:flex
           `}
@@ -59,7 +59,7 @@ function FeaturesSection() {
 
           {/* Right features */}
           <div className={`
-            mb-auto hidden max-w-50 flex-col items-center gap-34 text-left
+            -mt-5 mb-auto hidden max-w-50 flex-col items-center gap-38 text-left
             text-sm text-gray-600
             lg:flex
           `}
