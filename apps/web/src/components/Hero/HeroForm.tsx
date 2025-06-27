@@ -1,6 +1,6 @@
+import { useHeroForm } from '@/components/Hero/useHeroForm'
 import JoinNowButton from '@/components/JoinNowButton'
 import { Form } from '@/components/ui/form'
-import { useHeroForm } from '@/hooks/useHeroForm'
 import HeroFormAgreement from './HeroFormAgreement'
 import HeroFormFields from './HeroFormFields'
 
