@@ -39,6 +39,10 @@ pnpm run build
 This project uses my custom eslint rule [eslint-config
 ](https://github.com/phaicom/eslint-config)
 
+## PS
+
+Some file like data and hooks that I didn't seperate into global folder because It's not use in others file and I want to group related feature together.
+
 ## License
 
 MIT
