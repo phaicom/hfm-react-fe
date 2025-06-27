@@ -119,6 +119,7 @@
   --color-hfm-gray: #999999;
   --color-hfm-gray-light: #a8a8a8;
   --color-hfm-bg-gray: #f4f4f4;
+  --color-hfm-bg-black: #161616;
 }
 
 @layer base {

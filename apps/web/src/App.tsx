@@ -1,5 +1,6 @@
 import FaqsSection from '@/components/Faqs'
 import FeaturesSection from '@/components/Features'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import HeroSection from '@/components/Hero'
 import LeaderboardSection from '@/components/Leaderboard'
@@ -15,6 +16,7 @@ function App() {
       <PrizesSection />
       <LeaderboardSection />
       <FaqsSection />
+      <Footer />
       <Toaster position="top-right" richColors />
     </>
   )

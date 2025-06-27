@@ -8,8 +8,8 @@ function FaqsSection() {
     { question: 'Question D', answer: 'Answer D' },
   ]
   return (
-    <section className="w-full bg-hfm-bg-gray px-4 pt-13 pb-30">
-      <h2 className="mb-22 text-center font-sofia-sans text-5xl">FAQs</h2>
+    <section className="w-full bg-hfm-bg-gray px-4 pt-15 pb-39">
+      <h2 className="mb-20 text-center font-sofia-sans text-5xl">FAQs</h2>
       <div className="mx-auto max-w-[85rem] px-8">
         <Accordion
           type="single"
