@@ -15,7 +15,8 @@ function LoginButton({
       variant={variant}
       size={size}
       className={`
-        cursor-pointer rounded-sm border-hfm-red bg-transparent px-5 text-white
+        cursor-pointer rounded-sm border-hfm-red bg-transparent px-5
+        text-hfm-white
         hover:bg-hfm-red hover:text-white
         ${className}
       `}

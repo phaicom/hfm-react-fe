@@ -116,10 +116,12 @@
   --font-sofia-sans: 'Sofia Sans Condensed', sans-serif;
   --color-hfm-red: #cd0511;
   --color-hfm-green: #179149;
+  --color-hfm-white: #eeeeee;
   --color-hfm-gray: #999999;
   --color-hfm-gray-light: #a8a8a8;
   --color-hfm-bg-gray: #f4f4f4;
   --color-hfm-bg-black: #161616;
+  --color-hfm-border-gray: #5a5a5a;
 }
 
 @layer base {

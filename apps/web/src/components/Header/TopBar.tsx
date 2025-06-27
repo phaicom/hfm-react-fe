@@ -4,14 +4,14 @@ import Language from './Language'
 
 function TopBar() {
   return (
-    <nav className="flex bg-foreground text-[#eeeeee]">
+    <nav className="flex bg-hfm-bg-black text-hfm-white">
       <div className={`
         mx-8 hidden w-full max-w-[82.5rem] items-center justify-between pt-4
         lg:flex
         xl:mx-auto
       `}
       >
-        <small className="text-[10px] text-[#a8a8a8]">
+        <small className="text-[10px] text-hfm-gray-light">
           Member of HF Markets Group
         </small>
         <div className="flex items-center gap-7 text-sm">
@@ -19,7 +19,7 @@ function TopBar() {
           <Button
             variant="outline"
             size="sm"
-            className="dark rounded-sm border-[#5a5a5a] px-2"
+            className="dark rounded-sm border-hfm-border-gray px-2"
             asChild
           >
             <a href="#" target="_blank">

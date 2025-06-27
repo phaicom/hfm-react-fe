@@ -11,7 +11,7 @@ function NavBar() {
   const { menuOpen, toggleMenu, closeMenu } = useMobileMenu()
 
   return (
-    <nav className="sticky top-0 z-50 flex bg-foreground text-[#eeeeee]">
+    <nav className="sticky top-0 z-50 flex bg-hfm-bg-black text-hfm-white">
       <div className={`
         mx-6 flex w-full max-w-[82.5rem] items-center pt-2 pb-6
         lg:mx-8

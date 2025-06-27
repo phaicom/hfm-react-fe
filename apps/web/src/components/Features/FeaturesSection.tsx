@@ -8,7 +8,7 @@ function FeaturesSection() {
   const rightFeatures = features.slice(2, 4)
 
   return (
-    <section className="bg-[#F4F4F4] pt-30">
+    <section className="bg-hfm-bg-gray pt-30">
       <div className="container mx-auto px-8 text-center">
         <h2 className="mb-21 font-sofia-sans text-5xl uppercase">
           Quisque Rutrum
@@ -30,7 +30,7 @@ function FeaturesSection() {
                 <img
                   src={feature.icon}
                   alt={feature.alt}
-                  className="mb-2 text-red-500"
+                  className="mb-2 text-hfm-red"
                 />
                 <p>{feature.description}</p>
               </div>
@@ -69,7 +69,7 @@ function FeaturesSection() {
                 <img
                   src={feature.icon}
                   alt={feature.alt}
-                  className="mb-2 text-red-500"
+                  className="mb-2 text-hfm-red"
                 />
                 <p>{feature.description}</p>
               </div>
